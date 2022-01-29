@@ -59,4 +59,51 @@
             transform: rotate(360deg);
         }
     }
+    .navbar{
+        z-index: 20;
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+        top: 2%;
+        
+    }
+    .nav-link{
+        font-size: 1.8rem;
+        padding: 2rem;
+        color: #eee;
+        word-wrap: break-word;
+        width: 1.5rem;
+        text-align: center;
+        transition: all 1s;
+    }
+    .nav-link:hover{
+        background-color:rgb(255, 152, 115) ;
+        width: 20rem;
+        transition: all 1s;
+    }
+    .heading{
+        position: absolute;
+        top: 55%;
+        font-family: 'Press Start 2P', cursive;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 4rem;
+        background-color: #eee;
+        padding: 2rem;
+        width: 70rem;
+        text-align: center;
+        border-radius: 1.5rem;
+        text-transform: uppercase;
+        color: #999;
+        font-weight: 900;
+        opacity: .9;
+    }
+    .fa-teamspeak{
+        position: absolute;
+        top: 80%;
+        font-size: 12rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color:rgb(255, 103, 47) ;
+    }
     /**Section 1**/
