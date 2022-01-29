@@ -14,6 +14,7 @@
         text-decoration: none;
         font-weight: 400;
         font-family: 'Mochiy Pop P One', sans-serif;
+        list-style-type: none;
     }
     html{
         font-size: 62.5%;
@@ -23,12 +24,13 @@
         overflow-x: hidden;    
     }
     .section-heading{
-        font-size: 4rem;
+        font-size: 5rem;
         color: #999;
         opacity: .8;
         text-transform: uppercase;
         font-weight: 900;
         text-align: center;
+        letter-spacing: .2rem;
     }
 
     /**Section 1**/
@@ -46,6 +48,7 @@
         top: -125vw;
         left: calc(50% - 75vw);
         border-radius: 45%;
+        animation: anime 60s infinite;
     }
     .background::before{
         content: "";
@@ -56,6 +59,7 @@
         left:0;
         position: absolute;
         border-radius: 40%;
+        animation: anime 60s infinite;
     }
     @keyframes anime{
         0%{
@@ -145,6 +149,12 @@
        transition: opacity .5s;
        box-shadow: 1rem 1rem 1rem #ddd;
    }
+   .customer-card:first-child{
+       align-self: flex-end;
+   }
+   .customer-card:last-child{
+    align-self: flex-start;
+}
    .customer-card:hover{
        opacity: 1;
    }
@@ -167,4 +177,127 @@
        font-size: 2rem;
        padding-top: 2rem;
        color: rgb(255, 103, 47);
+   }
+   /**end of section 2**/
+   .section-3{
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       justify-content: space-around;
+       flex-direction: column;
+   }
+   .team-container{
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       height: 70%;
+   }
+   .team-img{
+       width: 36rem;
+       height: 25rem;
+       object-fit: cover;
+       border-radius: 1.5rem;
+   }
+   .team-card{
+       position: relative;
+       display: flex;
+       justify-content: space-evenly;
+       flex-direction: column;
+       width: 40rem;
+       height: 45rem;
+       padding: 1.6rem 1rem 1rem 2rem;
+       background-color: #eee;
+       box-shadow: 1rem 1rem 1rem #ddd;
+       opacity: .7;
+       transition: opacity .8s;
+   }
+   .team-card:hover{
+       opacity: 1;
+   }
+   .team-card:nth-child(1){
+       align-self: flex-start;
+   }
+   .team-card:nth-child(3){
+    align-self: flex-end;
+}
+   .team-member{
+       color: #999;
+       font-size: 2rem;
+       font-weight: lighter;
+       margin-top: 2rem;
+   }
+   .team-member span{
+       font-size: 1.2rem;
+   }
+   .team-member-skills{
+       display: flex;
+       margin: 2rem 0;
+       justify-content: space-between;
+       font-size: 1.6rem;
+       padding-right: 3rem;
+   }
+   .skills{
+       display: flex;
+       color:#999;
+   }
+   .projects{
+       font-size: 1.5rem;
+       text-align: center;
+       width: 15rem;
+       color: #eee;
+       padding: 1.2rem;
+       border-radius: 3rem;
+       background-color:rgb(255, 103, 47);
+       letter-spacing: .2rem;
+   }
+   .section-btn{
+       position: absolute;
+       width: 4rem;
+       height: 4rem;
+       background-color: #000;
+       top: -1rem;
+       right: -1rem;
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 1.5rem;
+       z-index: 10;
+       
+   }
+   .section-btn-line i{
+       color: #ddd;
+       font-size: 2.2rem;
+       text-align: center;
+       transition: all .5s;
+       
+   }
+   .about-me-section{
+       position: absolute;
+       background-color:rgb(255, 121, 73);
+       width: 100%;
+       height: 100%;
+       left: 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+       padding: 3rem;
+       opacity: 0;
+       transition: opacity .8s;
+   }
+   .about-me{
+       font-size: 3rem;
+       color: #eee;
+   }
+   .about-text{
+       text-align: center;
+       font-size: 1.7rem;
+       color: #eee;
+   }
+   .change .section-btn-line i{
+       transform: rotate(75deg);
+   }
+   .change.about-me-section{
+       opacity: .97;
    }
