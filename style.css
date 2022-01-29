@@ -18,6 +18,7 @@
     }
     html{
         font-size: 62.5%;
+        scroll-behavior: smooth;
     }
     body{
         
@@ -297,4 +298,99 @@
    }
    .change.about-me-section{
        opacity: .97;
+   }
+   /**end of section 3**/
+
+   .section-4{
+       width: 100%;
+       height: 130vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       
+      
+   }
+   .contact-img{
+       background-color: rgb(255, 122, 74);
+       padding: 5rem;
+       border-radius: 2rem;
+       box-shadow: 2rem 2rem 2rem #aaa;
+       transform: rotateY(20deg);
+       transition: all 1s;
+   }
+   .contact-img:hover{
+       transform: translateY(-5rem)
+       rotateY(20deg);
+   }
+   .contact-container{
+       display: flex;
+       justify-content: space-evenly;
+       background-color: #eee;
+       margin: 0 10rem;
+       padding: 3rem;
+       perspective: 100rem;
+   }
+   .contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 2rem 2rem 2rem #aaa;
+    padding:  0rem 6rem;
+    border-radius: 1.5rem;
+    transform: rotateY(-20deg);
+   }
+   .contact-form input,
+   .contact-form textarea{
+       margin: 1.5rem;
+       padding: 1rem;
+       border-radius: 1rem;
+       border: solid #ddd;
+       color: #666;
+   }
+   .contact-form textarea{
+       max-width: 50rem;
+       min-width: 50rem;
+       max-height:30rem;
+       min-height: 30rem;
+   }
+   .contact-form input[type="submit"]{
+       background-color: rgb(255, 137, 94);
+       border: none;
+       text-transform: capitalize;
+       color: #fff;
+       font-size: 1.7rem;
+       letter-spacing: .2rem;
+       transition: all .7s;
+       cursor: pointer;
+   }
+   .contact-form input[type="submit"]:hover{
+       background-color: rgb(255, 103, 47);
+   }
+   .copyright{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 2.5rem;
+       text-transform: capitalize;
+       opacity: .5;
+   }
+   .scroll-btn{
+       position: fixed;
+       width: 5rem;
+       height: 5rem;
+       padding: 2rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 3rem;
+       bottom: 10rem;
+       right: 2rem;
+       background-color:rgb(255, 122, 74);
+       color: #eee;
+       border-radius: 50%;
+       transition: all .5s;
+   }
+   .scroll-btn:hover{
+       background-color: rgb(255, 103, 47);
    }
