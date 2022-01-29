@@ -19,8 +19,8 @@
     html{
         font-size: 62.5%;
     }
-    .container{
-        width: 100%;
+    body{
+        
         overflow-x: hidden;    
     }
     .section-heading{
@@ -183,13 +183,14 @@
        width: 100%;
        height: 100vh;
        display: flex;
-       justify-content: space-around;
+       justify-content: space-evenly;
        flex-direction: column;
    }
    .team-container{
        display: flex;
        justify-content: space-evenly;
        align-items: center;
+       align-content: center;
        height: 70%;
    }
    .team-img{
@@ -199,10 +200,10 @@
        border-radius: 1.5rem;
    }
    .team-card{
-       position: relative;
        display: flex;
-       justify-content: space-evenly;
        flex-direction: column;
+       justify-content: space-evenly;
+       position: relative;
        width: 40rem;
        height: 45rem;
        padding: 1.6rem 1rem 1rem 2rem;
@@ -231,24 +232,20 @@
    }
    .team-member-skills{
        display: flex;
-       margin: 2rem 0;
+       margin-top: 1rem;
        justify-content: space-between;
        font-size: 1.6rem;
-       padding-right: 3rem;
-   }
-   .skills{
-       display: flex;
-       color:#999;
+       padding-right: 2rem;
+       color: #888;
+       font-size: 4rem;
    }
    .projects{
-       font-size: 1.5rem;
-       text-align: center;
-       width: 15rem;
+       font-size: 4rem;
+       text-align: start;
        color: #eee;
-       padding: 1.2rem;
+       padding: .7rem 2rem;
        border-radius: 3rem;
-       background-color:rgb(255, 103, 47);
-       letter-spacing: .2rem;
+       color:#999;       
    }
    .section-btn{
        position: absolute;
