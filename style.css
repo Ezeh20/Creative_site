@@ -20,8 +20,8 @@
         font-size: 62.5%;
         scroll-behavior: smooth;
     }
-    body{
-        
+    .container{
+        width: 100%;
         overflow-x: hidden;    
     }
     .section-heading{
@@ -307,6 +307,7 @@
        display: flex;
        flex-direction: column;
        justify-content: space-around;
+       align-items: center;
        
       
    }
@@ -317,6 +318,7 @@
        box-shadow: 2rem 2rem 2rem #aaa;
        transform: rotateY(20deg);
        transition: all 1s;
+       width: 52rem;
    }
    .contact-img:hover{
        transform: translateY(-5rem)
@@ -324,11 +326,14 @@
    }
    .contact-container{
        display: flex;
-       justify-content: space-evenly;
+       justify-content: space-around;
        background-color: #eee;
-       margin: 0 10rem;
-       padding: 3rem;
+       margin: 0rem 5rem;
+       padding: 2rem;
        perspective: 100rem;
+       width: 80%;
+       height: 40%;
+       align-items: center;
    }
    .contact-form{
     display: flex;
@@ -336,23 +341,25 @@
     justify-content: center;
     background-color: #fff;
     box-shadow: 2rem 2rem 2rem #aaa;
-    padding:  0rem 6rem;
+    padding: 5rem;
     border-radius: 1.5rem;
     transform: rotateY(-20deg);
+    width: 45rem;
    }
    .contact-form input,
    .contact-form textarea{
-       margin: 1.5rem;
+       margin: 1rem;
        padding: 1rem;
        border-radius: 1rem;
        border: solid #ddd;
        color: #666;
+       font-size: 1.5rem;
    }
    .contact-form textarea{
-       max-width: 50rem;
-       min-width: 50rem;
-       max-height:30rem;
-       min-height: 30rem;
+       max-width: 42rem;
+       min-width: 30rem;
+       max-height:15rem;
+       min-height: 10rem;
    }
    .contact-form input[type="submit"]{
        background-color: rgb(255, 137, 94);
@@ -394,3 +401,142 @@
    .scroll-btn:hover{
        background-color: rgb(255, 103, 47);
    }
+
+   @media(max-width:1400px){
+       .contact-img{
+           width: 45rem;
+       }
+       .contact-form{
+           width: 40rem;
+       }
+       .contact-form textarea{
+        max-width: 28rem;
+        min-width: 28rem;
+   }
+   .section-2{
+        height: auto;       
+   }
+   .section-container{
+       flex-wrap: wrap;
+   }
+   .customer-card{
+       margin: 5rem 10rem;
+   }
+   .section-heading{
+       padding-bottom:10rem;
+   }
+   .section-3{
+       height: auto;
+   }
+   .team-container{
+       flex-wrap: wrap;
+   }
+   .team-card{
+       margin: 5rem 10rem;
+   }
+   .background{
+       top: -120vw;
+   }
+}
+@media(max-width:1300px){
+    .contact-img{
+        display: none;
+    }
+    .contact-form{
+        transform: rotateY(0);
+        width: 50rem;
+    }
+    .contact-form textarea{
+        max-width: 38rem;
+        min-width: 38rem;
+   }
+   .contact-container{
+       width: 55%;
+   }
+   .section-heading{
+       font-size: 4rem;
+   }
+   .background{
+       top: -100vw;
+   }
+   .heading{
+       top: 60%;
+   }
+   .navbar{
+       top: 8%;
+   }
+   .fa-teamspeak{
+       font-size: 9rem;
+   }
+   .nav-link{
+       font-size: 2.5rem;
+   }
+}
+@media(max-width:1000px){
+    .contact-container{
+        background-color: transparent;
+    }
+    .contact-form{
+        background-color: #eee;
+    }
+    .heading{
+        top: 45%;
+    }
+    .nav-link{
+        font-size: 2rem;
+    }
+}
+@media(max-width:900px){
+    .background{
+        top: -90vw;
+    }
+    .heading{
+        width: 60rem;
+        font-size: 3.5rem;
+    }
+}
+@media(max-width:720px){
+    .background{
+        top: -70vw;
+    }
+}
+@media(max-width:650px){
+    .heading{
+        font-size: 2.2rem;
+        width: 40rem;
+    }
+    .nav-link{
+        font-size: 1.7rem;
+    }
+}
+@media(max-width:550px){
+    html{
+        font-size: 45%;
+    }
+    .heading{
+        top: 40%;
+    }
+    .section-heading{
+        font-size: 3rem;
+    }
+}
+@media(max-width:430px){
+    .contact-form{
+        width: 45rem;
+    }
+    .contact-form textarea{
+        max-width: 33rem;
+        min-width: 33rem;
+   }
+   .copyright{
+       font-size: 2rem;
+   }
+   .heading{
+       top: 35%;
+   }
+}
+@media(max-width:400px){
+    html{
+        font-size: 35%;
+    }
+}
